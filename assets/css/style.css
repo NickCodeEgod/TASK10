@@ -1,0 +1,177 @@
+.car {
+  position: absolute;
+  left: 0;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  width: 453px;
+  height: 200px;
+  background-image: url(../img/vintage-car.webp);
+  border-radius: 20px;
+  animation: car-move 10s linear infinite;
+}
+
+@keyframes car-move {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px);
+  }
+}
+.road {
+  width: 100%;
+  height: 100px;
+  background-image: url('your_road_image_url');
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  animation: roadMove 5s linear infinite;
+}
+
+@keyframes roadMove {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+body{
+  background-image: url(../img/road.jpg);
+}
+.cloud1 {
+  position: absolute;
+  top: 5%;
+  left: -100px; 
+  width: 600px;
+  height: 316px;
+  background-image: url(../img/cloud.png);
+  animation: move-right 10s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px); 
+  }
+}
+.cloud2 {
+  position: absolute;
+  top: 0%;
+  left: -100px; 
+  width: 600px;
+  height: 316px;
+  background-image: url(../img/cloud.png);
+  animation: move-right 13s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px); 
+  }
+}
+.cloud3 {
+  position: absolute;
+  top: 10%;
+  left: -100px; 
+  width: 600px;
+  height: 316px;
+  background-image: url(../img/cloud.png);
+  animation: move-right 17s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px); 
+  }
+}
+
+.cloud4 {
+  position: absolute;
+  top: 15%;
+  left: -100px; 
+  width: 600px;
+  height: 316px;
+  background-image: url(../img/cloud.png);
+  animation: move-right 23s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px); 
+  }
+}
+
+.car2 {
+  background-image: url(../img/Green-cartoon-car-on-transparent-background-PNG-removebg-preview.png);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 97%;
+  transform: translateY(-50%);
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  from {
+    right: 0;
+  }
+  to {
+    right: calc(100% - 200px);
+  }
+}
+.plane {
+  background-image: url(../img/adf-removebg-preview.png);
+  width: 732px;
+  height: 284px;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  transform: translateY(-50%);
+  animation: move 16s linear infinite;
+}
+
+@keyframes move {
+  from {
+    right: 0;
+  }
+  to {
+    right: calc(100% - 200px);
+  }
+}
+.sun {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at center, #fff, #fcb045, #fcb045, #f96f06);
+  border-radius: 50%;
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 20px 5px #f96f06;
+  }
+  50% {
+    box-shadow: 0 0 200px 60px #f96f06;
+  }
+  100% {
+    box-shadow: 0 0 20px 
+  }
+}
+.trees{
+  margin-top: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
